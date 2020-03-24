@@ -17,5 +17,8 @@ module.exports = {
     },
     rules: {
         "no-global-assign": ["error", {"exceptions": ["require"]}]
-      }
+      },
+    plugins: [
+        "html"
+    ]
 };
