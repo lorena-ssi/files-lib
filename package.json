@@ -1,0 +1,28 @@
+{
+  "name": "@lorena-ssi/files-lib",
+  "version": "1.0.0",
+  "description": "Manage file chunks to send via json messages",
+  "main": "./index.js",
+  "module": "./src/main.js",
+  "scripts": {
+    "lint": "eslint ./src ./test --fix",
+    "test": "cross-env DEBUG=* NODE_ENV=development node -r esm ./test/index.js"
+  },
+  "author": "Javi Santos",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.13.2"
+  }
+}
